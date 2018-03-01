@@ -1,0 +1,197 @@
+/*
+    Created on : 21-feb-2018, 21:46:26
+    Author     : benja
+*/
+body{
+  background-color: #f3f3f3;
+}
+.main {
+    background-color: #fff;
+    border: 10px solid #EAEAEA;
+}
+.color-Azul{
+    background-color: #092845;
+}
+.color-Azul-text{
+    color: #092845;
+}
+.color-AzulClaro{
+    background-color: #003462;
+}
+.color-AzulClaro-text{
+    color: #003462;
+}
+.color-Amarillo{
+    background-color: #D29524;
+}
+.color-Amarillo-text{
+    color: #D29524;
+}
+.color-Plomo{
+    background-color: #F3F3F3;
+}
+.color-Plomo-text{
+    color: #F3F3F3;
+}
+.table-new-contract {
+  padding: 15px 5px !important;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+/*
+    Materialize customer
+*/
+/* Text inputs */
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+  margin: 0 0 0px 0 !important;
+}
+.btn-floating {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  background-color: #003462 !important;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.btn-floating:hover {
+  background-color:red;
+}
+/* .btn, .btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #003462;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+} */
+/*
+    Si pasas por encima
+*/
+.btn:hover, .btn-large:hover {
+  background-color: #D29524 !important;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #092845 !important;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid red !important;
+  -webkit-box-shadow: 0 1px 0 0 red !important;
+          box-shadow: 0 1px 0 0 red !important;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: red !important;
+}
+
+.input-field .prefix.active {
+  color: red !important;
+}
+
+.side-nav li > a.btn:hover, .side-nav li > a.btn-large:hover, .side-nav li > a.btn-large:hover {
+  background-color: #003462 !important;
+}
+
+.side-nav li > a.btn-floating:hover {
+  background-color:  #003462 !important;
+}
+
+/*
+    file-input
+*/
+.file-input {
+  visibility: hidden;
+  width: 0;
+  position: relative;
+}
+.file-input::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  visibility: visible;
+  position: absolute;
+}
+.file-input:hover::before {
+  border-color: black;
+}
+.file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+/*
+    IMAGEN
+*/
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+.gallery img{
+  width: 100px !important;
+  padding: 5px;
+  filter: grayscale(10%);
+  transition: 0.5s;
+}

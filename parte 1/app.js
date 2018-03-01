@@ -37,5 +37,7 @@ $('#guardar').click(function(){
 firebase.database().ref("usuarios")
 .on("child_added", function(s){
   var user = s.val();
+  $('#root').append("<p>"+user.nombre+"</p>")
   $('#root').append("<img width='100px' src='"+user.foto+"' />")
+
 });

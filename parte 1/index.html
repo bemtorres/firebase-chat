@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>login</title>
+    <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
   <body>
-    <h1>Iniciar Sesión</h1>
-    <button id="login">Inicia con google</button>
-
-    <div id="root"></div>
-    <button id="guardar">Guardar</button>
-
+    <div class="container">
+      <div class="row">
+        <div class="center-align col s12">
+          <h1 class="center-align red white-text">Iniciar Sesión</h1>
+          <button class="btn-large blue white-text" id="login">Inicia con google</button>
+          <br/><br/>
+          <div class="white">
+              <div id="root"></div>
+          </div>
+        <!--  <button class="btn-large amber" id="guardar">Guardar</button> -->
+        </div>
+      </div>
+    </div>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
