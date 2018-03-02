@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form class="form-signin" action="">
+            <h1 class="h3 mb-3 font-weight-normal"><strong>CHAT</strong></h1>
+            <label for="nombre" class="sr-only">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Nombre" required autofocus>
+            <br/>
+            <label for="mensaje" class="sr-only">Mensaje</label>
+            <input type="text" id="mensaje" class="form-control" placeholder="Mensaje" required>
+            <br/>
+            <button type="button" class="btn btn-lg btn-primary btn-block" id="enviar">Enviar</button>
+            <div id="error"></div>
+            <p class="mt-5 mb-3 text-muted">&copy; bemtorres </p>
+          </form>
+        </div>
+        <div class="col">
+          <table class="table">
+            <tbody id="chat"> </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCTvmzqf2ck4reeSp9L4nlRXhiafo5cYsE",
+      authDomain: "chat-3895a.firebaseapp.com",
+      databaseURL: "https://chat-3895a.firebaseio.com",
+      projectId: "chat-3895a",
+      storageBucket: "chat-3895a.appspot.com",
+      messagingSenderId: "37778582507"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="test.js"></script>
+  </body>
+</html>

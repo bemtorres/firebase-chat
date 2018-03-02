@@ -26,7 +26,7 @@ function guardarDatos(user){
 
 //Escribir una base de datos
 $('#guardar').click(function(){
-  firebase.database().ref("persona")
+  firebase.database().ref("seba")
   .set({
     nombre: "benjamin",
     edad: "22"

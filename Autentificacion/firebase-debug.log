@@ -1,0 +1,27 @@
+[debug] [2018-03-01T19:33:05.847Z] ----------------------------------------------------------------------
+[debug] [2018-03-01T19:33:05.850Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\benja\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase open
+[debug] [2018-03-01T19:33:05.850Z] CLI Version:   3.17.4
+[debug] [2018-03-01T19:33:05.850Z] Platform:      win32
+[debug] [2018-03-01T19:33:05.851Z] Node Version:  v8.9.4
+[debug] [2018-03-01T19:33:05.851Z] Time:          Thu Mar 01 2018 16:33:05 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-03-01T19:33:05.851Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-01T19:33:05.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-03-01T19:33:05.879Z] > authorizing via signed-in user
+[debug] [2018-03-01T19:33:05.882Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-01T19:33:05.882Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/JHzpiycKKii4zH2k3VAdLhAWlHXTPX5Mwv-6thLxRVk',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Mar 01 2018 16:33:05 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-03-01T19:33:06.334Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-01T19:33:06.368Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/proyectologin-3cea7  
+  
+ Thu Mar 01 2018 16:33:06 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-03-01T19:33:10.695Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-01T19:33:10.696Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/proyectologin-3cea7/tokens  
+  
+ Thu Mar 01 2018 16:33:10 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-03-01T19:34:08.255Z] <<< HTTP RESPONSE 200
